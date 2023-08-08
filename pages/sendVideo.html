@@ -21,22 +21,23 @@
             </nav>
         </header>
         <main class="container">
-            <form class="container__form">
+            <form class="container__form" data-form>
                 <h2 class="form__title">Envie um vídeo!</h3>
                 <div class="form__field">
                     <label class="field__tag" for="url">Link embed</label>
-                    <input name="url" class="field__writing" required placeholder="Por exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" id='url'/>
+                    <input name="url" class="field__writing" required placeholder="Por exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" id='url' data-url/>
                 </div>
                 <div class="form__field">
                     <label class="field__tag" for="title">Titulo do vídeo</label>
-                    <input name="title" class="field__writing" required placeholder="Neste campo, dê o nome do vídeo" id='title'/>
+                    <input name="title" class="field__writing" required placeholder="Neste campo, dê o nome do vídeo" id='title' data-title/>
                 </div>
                 <div class="form__field">
                     <label class="field__tag" for="image">Imagem de perfil</label>
-                    <input name="image" class="field__writing" required placeholder="Insira a url da imagem" id='image'/>
+                    <input name="image" class="field__writing" required placeholder="Insira a url da imagem" id='image' data-image/>
                 </div>
                 <input class="form__button" type="submit"/>
             </form>
         </main>
+        <script src="../assets/js/createVideo.js" type="module"></script>
     </body>
 </html>
