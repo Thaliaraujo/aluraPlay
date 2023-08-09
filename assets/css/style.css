@@ -26,8 +26,6 @@ body {
     text-align: center;
 }
 
-/* ESTILOS DO HEADER */
-
 .header {
     background-color: white;
     position: fixed;
@@ -53,8 +51,6 @@ body {
     background-position: center;
     padding: 15px;
 }
-
-/* ESTILOS DA SEÇÃO VÍDEOS */
 
 .videos__container {
     color: black;

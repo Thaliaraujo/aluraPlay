@@ -1,11 +1,8 @@
-/* Aula 1 */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-/* SEÇÃO VÍDEOS */
 
 .videos__container {
     display: flex;
@@ -20,8 +17,6 @@
     height: 303px;
     width: 300px;
 }
-
-/* grid vídeos */
 
 .description-video {
     margin-top: 1rem;
