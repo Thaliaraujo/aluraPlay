@@ -1,11 +1,11 @@
 async function listVideos() {
-    const connection = await fetch("http://localhost:3000/videos");
+    const connection = await fetch("https://github.com/Thaliaraujo/aluraPlay/blob/main/db.json");
     const convertedConnection = await connection.json();
     return convertedConnection;
 };
 
 async function createVideo(title, description, url, image) {
-    const connect = await fetch ("http://localhost:3000/videos", {
+    const connect = await fetch ("https://github.com/Thaliaraujo/aluraPlay/blob/main/db.json", {
         method: "POST",
         headers: {
             "content-type": "application/json"
@@ -28,7 +28,7 @@ async function createVideo(title, description, url, image) {
 
 
 async function searchVideo(searchTerm) {
-    const connect = await fetch (`http://localhost:3000/videos?q=${searchTerm}`);
+    const connect = await fetch (`https://github.com/Thaliaraujo/aluraPlay/blob/main/db.json?q=${searchTerm}`);
     const convertedConnection = connect.json();
 
     return convertedConnection;
