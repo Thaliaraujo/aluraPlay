@@ -1,11 +1,11 @@
 async function listVideos() {
-    const connection = await fetch("http://localhost:3000/videos");
+    const connection = await fetch("https://64da8814e947d30a260b5e1a.mockapi.io/videos");
     const convertedConnection = await connection.json();
     return convertedConnection;
 };
 
 async function createVideo(title, description, url, image) {
-    const connect = await fetch ("http://localhost:3000/videos", {
+    const connect = await fetch ("https://64da8814e947d30a260b5e1a.mockapi.io/videos", {
         method: "POST",
         headers: {
             "content-type": "application/json"
@@ -28,7 +28,7 @@ async function createVideo(title, description, url, image) {
 
 
 async function searchVideo(searchTerm) {
-    const connect = await fetch (`http://localhost:3000/videos?q=${searchTerm}`);
+    const connect = await fetch (`https://64da8814e947d30a260b5e1a.mockapi.io/videos?q=${searchTerm}`);
     const convertedConnection = connect.json();
 
     return convertedConnection;
